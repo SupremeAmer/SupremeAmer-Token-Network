@@ -1,0 +1,11 @@
+{
+  "name": "supremeamer-Token-Network",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "fs": "0.0.1-security"
+  }
+}
