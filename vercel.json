@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
+    }
+  ],
+  "env": {
+    "APPWRITE_ENDPOINT": "@appwrite_endpoint",
+    "APPWRITE_PROJECT": "@appwrite_project",
+    "APPWRITE_DB_ID": "@appwrite_db_id",
+    "APPWRITE_COLLECTION_ID": "@appwrite_collection_id",
+    "SUPREMEAMER_RECEIVER_BNB": "@supremeamer_receiver_bnb"
+  }
+}
