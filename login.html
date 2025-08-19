@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <title>Login - SupremeAmer Coin Airdrop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
-  <script src="config.js"></script>
   <style>
     body {
       min-height: 100vh;
@@ -205,9 +203,9 @@
   </div>
 
   <script>
-    // Use environment variables from config.js
-    const APPWRITE_ENDPOINT = window.CONFIG.APPWRITE_ENDPOINT;
-    const APPWRITE_PROJECT = window.CONFIG.APPWRITE_PROJECT;
+    // Use environment variables
+    const APPWRITE_ENDPOINT = import.meta.env.VITE_APPWRITE_ENDPOINT;
+    const APPWRITE_PROJECT = import.meta.env.VITE_APPWRITE_PROJECT;
 
     // ---- APPWRITE SDK INIT ----
     const { Client, Account } = Appwrite;
